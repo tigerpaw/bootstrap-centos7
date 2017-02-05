@@ -1,6 +1,6 @@
 #!/bin/bash
 # bootstrap-centos7.sh
-# Version 1.0.0
+# Version 1.0.1
 # -
 # curl -s https://raw.githubusercontent.com/tigerpaw/bootstrap-centos7/master/boostrap-centos7.sh | bash -s
 
@@ -46,7 +46,7 @@ function main() {
   # Install packages
   if [ -n "$PKGS" ]; then yum install -y ${PKGS[@]}; fi
 
-  console_out "Complete\n" 
+  console_out "Complete\n"
 }
 
 function console_out() {
