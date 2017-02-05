@@ -42,6 +42,11 @@ function main() {
       console_out "Skipping $i\n"
     fi
   done
+
+  # Install packages
+  if [ -n "$PKGS" ]; then yum install -y ${PKGS[@]}; fi
+
+  console_out "Complete\n" 
 }
 
 function console_out() {
